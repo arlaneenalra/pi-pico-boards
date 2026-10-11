@@ -2003,6 +2003,10 @@
 		(color 0 0 0 0)
 		(uuid "eb195623-de52-4918-a7f3-d56afd91af9a")
 	)
+	(no_connect
+		(at 102.87 82.55)
+		(uuid "6738c387-1669-4b03-879a-214bc55c1379")
+	)
 	(wire
 		(pts
 			(xy 113.03 100.33) (xy 123.19 100.33)
@@ -2212,16 +2216,6 @@
 			(type default)
 		)
 		(uuid "95ee6520-7f55-4fef-9fe6-3c379d24310c")
-	)
-	(wire
-		(pts
-			(xy 102.87 82.55) (xy 123.19 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "962f04bb-675a-413f-a424-ffca7e7f4d85")
 	)
 	(wire
 		(pts
@@ -4960,17 +4954,7 @@
 				(justify left)
 			)
 		)
-		(pin "32KHZ" input
-			(at 123.19 82.55 180)
-			(uuid "5465bdbd-5416-4c55-88a0-2ec429a68e8a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GPI027{slash}ADC1" tri_state
+		(pin "GPIO27{slash}ADC1" tri_state
 			(at 123.19 118.11 180)
 			(uuid "6f352d18-0cbe-4e73-b45a-bdcb61408910")
 			(effects

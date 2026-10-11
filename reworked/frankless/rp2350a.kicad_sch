@@ -5739,7 +5739,7 @@
 		)
 		(uuid "4de5ccf1-b807-4d04-9c4a-37559643040e")
 	)
-	(hierarchical_label "SD_DAT0"
+	(hierarchical_label "SD_CDDAT3"
 		(shape input)
 		(at 227.33 74.93 0)
 		(effects
@@ -5849,7 +5849,7 @@
 		)
 		(uuid "8ad52b0a-06f7-4ae4-9833-3475f69d4e26")
 	)
-	(hierarchical_label "GPI027{slash}ADC1"
+	(hierarchical_label "GPIO27{slash}ADC1"
 		(shape tri_state)
 		(at 227.33 143.51 0)
 		(effects
@@ -5860,7 +5860,7 @@
 		)
 		(uuid "a1658f53-5c1f-4524-9f45-c95ac36e6067")
 	)
-	(hierarchical_label "SD_CDDAT3"
+	(hierarchical_label "SD_DAT0"
 		(shape input)
 		(at 227.33 82.55 0)
 		(effects

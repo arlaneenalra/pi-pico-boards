@@ -3966,12 +3966,6 @@
 		(uuid "0afe729a-a296-4e6a-8bf7-56561bd3f4f5")
 	)
 	(junction
-		(at 130.81 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "111bb4ce-e345-4cf1-bbd9-88c93c258747")
-	)
-	(junction
 		(at 27.94 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4620,16 +4614,6 @@
 			(type default)
 		)
 		(uuid "873505c0-b56d-4c8d-8ea9-3c1774c50d32")
-	)
-	(wire
-		(pts
-			(xy 129.54 110.49) (xy 130.81 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87992627-6160-4b00-8e83-cc255e50a834")
 	)
 	(wire
 		(pts
@@ -8523,84 +8507,6 @@
 			(project "frankless"
 				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MicroFRANK:+3V3")
-		(at 129.54 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "45c4c366-9892-4a71-bdcd-0dccf2b9e6d4")
-		(property "Reference" "#PWR011"
-			(at 129.54 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 129.54 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 129.54 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e5128965-c4a4-4760-8e8b-492cf16b53b6")
-		)
-		(instances
-			(project "frankless"
-				(path "/8c0b3d8b-46d3-4173-ab1e-a61765f77d61/84d5e8f7-bda8-4f18-8ff8-1a8273c38b01"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
