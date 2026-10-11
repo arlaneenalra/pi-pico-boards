@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "MicroFRANK") (type "KiCad") (uri "${KIPRJMOD}/libs") (options "") (descr ""))
 	(lib (name "EasyEDA_Lib") (type "EasyEDA / JLCEDA Pro") (uri "${KIPRJMOD}/EasyEDA_Lib/EasyEDA_Lib.elibz") (options "") (descr ""))
+	(lib (name "Logo") (type "KiCad") (uri "${KIPRJMOD}/Logo.pretty") (options "") (descr ""))
 )

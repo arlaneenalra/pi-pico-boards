@@ -5,7 +5,7 @@
 	(uuid "8060a186-c722-4a07-ac60-4c3635e9f9b8")
 	(paper "A4")
 	(title_block
-		(comment 1 "https://github.com/rh1tech/frank")
+		(comment 1 "https://github.com/arlaneenalra/pi-pico-boards/tree/main/reworked/frankless")
 	)
 	(lib_symbols
 		(symbol "FRANK:+3V3"

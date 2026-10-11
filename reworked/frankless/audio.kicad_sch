@@ -9,7 +9,7 @@
 		(date "${DATE}")
 		(rev "${VERSION}")
 		(company "Mikhail Matveev")
-		(comment 1 "https://github.com/rh1tech/frank")
+		(comment 1 "https://github.com/arlaneenalra/pi-pico-boards/tree/main/reworked/frankless")
 	)
 	(lib_symbols
 		(symbol "MicroFRANK:AudioJack_3.5mm"

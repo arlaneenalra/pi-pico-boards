@@ -79,11 +79,35 @@
       ],
       "drc_exclusions": [
         [
+          "lib_footprint_mismatch|203100000|98620000|8ed6f0df-443f-44ff-aa04-8956adc1a64d|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|200730000|117260000|66d40500-cd66-4d03-a1f5-11a0cfa11c00|98e0b2a0-5360-4cbc-b274-399f3a09da74",
+          ""
+        ],
+        [
+          "silk_over_copper|201114866|118345424|66d40500-cd66-4d03-a1f5-11a0cfa11c00|352ece86-d792-4f56-b70f-ee157f8f1daa",
+          ""
+        ],
+        [
+          "silk_over_copper|201277569|118403430|40b5b8eb-610b-4815-ad3c-0fc121a5824f|352ece86-d792-4f56-b70f-ee157f8f1daa",
+          ""
+        ],
+        [
+          "silk_over_copper|201750000|117260000|66d40500-cd66-4d03-a1f5-11a0cfa11c00|7015b33b-ab50-4423-9d0e-cbddc83a859e",
+          ""
+        ],
+        [
           "silk_overlap|200228641|95455000|99c8c036-0edd-400b-8c84-bb6f4b630353|a2560dfd-4769-4296-86f5-6a2585bdf348",
           ""
         ],
         [
           "silk_overlap|200340000|95490000|43afb985-cab3-4118-9e78-b7b0805ff890|99c8c036-0edd-400b-8c84-bb6f4b630353",
+          ""
+        ],
+        [
+          "silk_overlap|201281158|116880000|66d40500-cd66-4d03-a1f5-11a0cfa11c00|c9cd00c5-f671-4cfe-8257-49f100cb73c3",
           ""
         ],
         [
@@ -96,6 +120,14 @@
         ],
         [
           "silk_overlap|204307250|81964250|313849f0-2c3c-413f-ac0e-3a5cf06498f3|62a372f9-682f-4a36-9d6e-3b1d598e6e2f",
+          ""
+        ],
+        [
+          "silk_overlap|204999000|110779863|66d40500-cd66-4d03-a1f5-11a0cfa11c00|c3667d57-81f7-4d04-a628-70e66bafeeab",
+          ""
+        ],
+        [
+          "silk_overlap|210032500|80884836|29add1d1-892c-4002-a106-82d234b78814|ff8062ea-c20b-4e26-9987-1af8724a4660",
           ""
         ]
       ],
@@ -609,7 +641,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -1095,7 +1127,7 @@
   "sheets": [
     [
       "8c0b3d8b-46d3-4173-ab1e-a61765f77d61",
-      "microfrank"
+      "frankless"
     ],
     [
       "db853a64-9343-4a36-b5b8-71001392b936",
@@ -1140,9 +1172,9 @@
   ],
   "text_variables": {
     "CON": "M2P2",
-    "DATE": "2026-06-04",
-    "NAME": "MicroFRANK",
-    "VERSION": "1.02"
+    "DATE": "2026-10-11",
+    "NAME": "The Frankless Frank",
+    "VERSION": "1.00"
   },
   "tuning_profiles": {
     "meta": {

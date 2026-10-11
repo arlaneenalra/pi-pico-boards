@@ -8,8 +8,11 @@
 		(title "${NAME}")
 		(date "${DATE}")
 		(rev "${VERSION}")
-		(company "Mikhail Matveev")
-		(comment 1 "https://github.com/rh1tech/frank")
+		(company "Chris Salch")
+		(comment 1 "https://github.com/arlaneenalra/pi-pico-boards/tree/main/reworked/frankless")
+		(comment 2 "Orignal By")
+		(comment 3 "Mikhail Matveev")
+		(comment 4 "https://github.com/rh1tech/frank")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x06_Pin"
