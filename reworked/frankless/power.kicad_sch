@@ -11839,7 +11839,7 @@
 				)
 			)
 		)
-		(property "AliExpress" "https://jlcpcb.com/partdetail/Sunlord-GZ1005D331TF/C74324"
+		(property "AliExpress" "https://jlcpcb.com/partdetail/MurataElectronics-BLM18PG121SN1D/C14709"
 			(at 261.62 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11850,7 +11850,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C74324"
+		(property "LCSC Part #" "C14709"
 			(at 261.62 71.12 90)
 			(hide yes)
 			(show_name no)
