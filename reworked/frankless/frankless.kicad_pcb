@@ -51249,7 +51249,7 @@
 		)
 	)
 	(gr_text "${NAME}\nRev ${VERSION}"
-		(at 217.1 87.8 270)
+		(at 220.8 66.4 90)
 		(layer "B.SilkS")
 		(uuid "08a095a6-de9e-4869-ad6c-811fad359cee")
 		(effects
