@@ -2003,10 +2003,6 @@
 		(color 0 0 0 0)
 		(uuid "eb195623-de52-4918-a7f3-d56afd91af9a")
 	)
-	(no_connect
-		(at 102.87 82.55)
-		(uuid "6738c387-1669-4b03-879a-214bc55c1379")
-	)
 	(wire
 		(pts
 			(xy 113.03 100.33) (xy 123.19 100.33)
@@ -5160,16 +5156,6 @@
 		(pin "1HZ_INT" input
 			(at 102.87 74.93 0)
 			(uuid "522f6f48-4253-4143-9b4f-5cad7a5446a1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "32KHZ" input
-			(at 102.87 82.55 0)
-			(uuid "131e889c-f91e-4d75-b1ba-3d87acbfef43")
 			(effects
 				(font
 					(size 1.27 1.27)
