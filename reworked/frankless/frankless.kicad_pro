@@ -79,7 +79,7 @@
       ],
       "drc_exclusions": [
         [
-          "courtyards_overlap|189146000|91268000|0f9b33f5-49b2-4d4e-966b-9091f7678910|2e28126e-bec1-40fc-8074-9a9c5966efab",
+          "courtyards_overlap|189857000|91268000|0f9b33f5-49b2-4d4e-966b-9091f7678910|e3d1eda8-7e5f-4009-9650-8a944cb774fa",
           ""
         ],
         [
@@ -1165,7 +1165,7 @@
         "uuid": "8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
       }
     ],
-    "used_designators": "USBC1,Y2-3,U3,U10-11,USB1,H5,R34-40,R60-61,C37-44,#PWR1-4,#PWR7,#PWR9-11,#PWR34-35,#PWR38-39,#PWR60,#PWR85-103,J1,J3,J8-10",
+    "used_designators": "USBC1,Y2-3,U3,U10-11,H5,USB1-2,R34-40,R60-61,C37-44,#PWR1-4,#PWR7,#PWR9-11,#PWR34-35,#PWR38-39,#PWR60,#PWR85-103,J1,J3,J8-10",
     "variants": []
   },
   "sheets": [
