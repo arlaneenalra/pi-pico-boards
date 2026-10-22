@@ -223,7 +223,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(hierarchical_label "C2"
+	(hierarchical_label "C1"
 		(shape input)
 		(at 146.05 99.06 180)
 		(effects
@@ -256,7 +256,7 @@
 		)
 		(uuid "7e0c9961-4b8e-4b52-b016-6d40d279b21a")
 	)
-	(hierarchical_label "C1"
+	(hierarchical_label "C2"
 		(shape input)
 		(at 166.37 96.52 0)
 		(effects

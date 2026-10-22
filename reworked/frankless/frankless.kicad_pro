@@ -254,6 +254,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -265,6 +266,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -276,6 +278,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -664,6 +667,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -726,8 +730,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "VBUS",
@@ -1165,7 +1169,7 @@
         "uuid": "8c0b3d8b-46d3-4173-ab1e-a61765f77d61"
       }
     ],
-    "used_designators": "USBC1,Y2-3,U3,U10-11,H5,USB1-2,R34-40,R60-61,C7,C37-44,#PWR1-4,#PWR7,#PWR9-11,#PWR34-35,#PWR38-39,#PWR60,#PWR85-103,J1,J3,J8-10",
+    "used_designators": "#PWR1-4,#PWR7,#PWR9-11,#PWR34-35,#PWR38-39,#PWR60,#PWR85-103,C7,C37-44,H5,J1,J3,J8-10,R34-40,R60-61,SW1-4,U3,U10-11,USB1-2,USBC1,Y2-3",
     "variants": []
   },
   "sheets": [
