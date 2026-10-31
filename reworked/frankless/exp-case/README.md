@@ -30,19 +30,22 @@ comes from the stacked USB-A, which stands 16.25 mm above the board.
 The lid holds two button plungers, which can only go in from the inside, so
 put the case together upside down:
 
-1. Lay the lid on its top. Drop an M2.5 hex nut into the trap at the end of
-   each of the four posts, and drop the two plungers into the button guide,
-   bar end up.
+1. Lay the lid on its top. Slide an M2.5 hex nut into the side slot of each
+   of the four posts. The slots open toward the middle of the board and sit
+   just below the free end of each post. Line each nut up with the bolt hole.
+   Then drop the two plungers into the button guide, bar end up.
 2. Lay the board in face down, so it rests on the four lid posts and its
    connectors drop into their openings.
 3. Put the bottom tray on. Its lip keys into the lid.
-4. Fit 4 × M2.5 × 10 socket head bolts from the bottom. They go through the
-   standoffs and the board into the nuts. As a bolt tightens, it pulls its
-   nut up against the top of the trap, which clamps the lid down. M2.5 × 8
-   also works, just filling the nut.
+4. Fit 4 × M2.5 × 10 socket head bolts from the bottom. Each one goes through
+   the tray standoff, the board and the solid 2 mm floor of a lid post into
+   its nut. Tightening pulls the nut down onto that floor, which clamps the
+   stack: bolt head, tray, standoff, board, post floor, nut. The slot's hex
+   sides keep the nut from turning, so no glue is needed.
 
-The nut traps are 5.2 mm across the flats (5.0 mm nut + 0.1 mm per side) and
-sit 2 to 4 mm above the board. On an FDM printer you can switch to
+Each nut slot is 5.2 mm across the flats (5.0 mm nut + 0.1 mm per side) and
+2.2 mm tall. The nut sits 2 to 4 mm above the board. If the nuts slide out
+while you're assembling, a dab of Blu Tack holds them until the bolts go in. On an FDM printer you can switch to
 `ff_screw_mode = "selftap"` (2.2 mm pilot) or `"insert"` (M2.5 heat-set).
 
 The two LED holes (2 mm) end in short tubes 1 mm above LD1 and LD2. A bit of

@@ -87,7 +87,9 @@ ff_standoff_d = 6.0;
 ff_screw_mode = "nut";
 ff_nut_af     = 5.0;    // M2.5 nut across flats
 ff_nut_clr    = 0.1;    // per side
-ff_nut_top    = 4.0;    // nut trap ceiling, above the board top (nut sits 2..4)
+ff_nut_t      = 2.0;    // M2.5 nut thickness
+ff_nut_t_clr  = 0.2;    // extra slot height
+ff_nut_floor  = 2.0;    // solid post below the nut slot (nut bears on this)
 ff_bolt_hole_l= 11.0;   // bolt clearance above the board top
 ff_insert_d   = 3.6;
 ff_insert_l   = 4.5;
@@ -188,11 +190,11 @@ module frankless_standoffs(floor_z = ff_floor_z(), d = ff_standoff_d) {
         translate([p[0], p[1], floor_z - 0.01]) cylinder(d = d, h = -FF_T - floor_z + 0.01);
 }
 
-// Bolts go in from the bottom, through the standoff and the PCB, into a nut
-// trapped in each lid post, so four M2.5 bolts clamp everything together.
+// Bolts go in from the bottom, through the standoff, the PCB and the solid
+// floor of each lid post, into a nut in the post's side slot. Four M2.5 bolts
+// clamp head -> tray -> standoff -> PCB -> post floor -> nut.
 // With the stock case the head seats 2.5 mm below the board bottom and the nut
-// sits 2..4 mm above the board top: M2.5 x 10 leaves 2.5 mm past the nut
-// (x 8 just fills it).
+// sits 2.0..4.0 mm above the board top: M2.5 x 10 leaves 2.5 mm past the nut.
 module frankless_standoff_holes(floor_z = ff_floor_z(), floor_t = ff_floor_t,
                                 head_depth = ff_head_depth) {
     for (p = FF_HOLES) translate([p[0], p[1], 0]) {
@@ -225,9 +227,17 @@ module frankless_lid_features(ceil_z = ff_ceil_z()) {
 module frankless_lid_holes(ceil_z = ff_ceil_z(), top_t = ff_top_t) {
     for (p = FF_HOLES) translate([p[0], p[1], -0.01])
         if (ff_screw_mode == "nut") {
-            // hex pocket open toward the board; flats face +/-Y (toward J10 at H3)
-            cylinder(d = (ff_nut_af + 2 * ff_nut_clr) / cos(30), h = ff_nut_top, $fn = 6);
+            // Nut slot above a solid floor, opening sideways toward the middle
+            // of the board. Tightening pulls the nut down onto the floor, so
+            // the post (and the lid) is clamped onto the board. Flats face
+            // +/-Y, so the nut slides in along X and can't turn.
+            dir = p[0] < FF_W / 2 ? 1 : -1;
+            hex = (ff_nut_af + 2 * ff_nut_clr) / cos(30);
             cylinder(d = ff_screw_d, h = ff_bolt_hole_l);
+            translate([0, 0, ff_nut_floor]) hull() {
+                cylinder(d = hex, h = ff_nut_t + ff_nut_t_clr, $fn = 6);
+                translate([dir * ff_post_d, 0, 0]) cylinder(d = hex, h = ff_nut_t + ff_nut_t_clr, $fn = 6);
+            }
         }
         else if (ff_screw_mode == "insert") cylinder(d = ff_insert_d, h = ff_insert_l);
         else cylinder(d = ff_pilot_d, h = ff_pilot_l);
