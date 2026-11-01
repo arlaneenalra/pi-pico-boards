@@ -10,8 +10,7 @@ suits resin printing: no self-tapping screws and no heat-set inserts. Everything
 | File | What |
 |---|---|
 | `frankless.scad` | Library: board data, cutouts, standoffs, lid features, complete case |
-| `frankless_case.scad` | Printable parts (`part = assembly / exploded / bottom / top / plungers / all`) |
-| `frankless_case_cell.scad` | Variant: deeper tray for a CR2032 holder, lid windows over the GPIO and UART headers |
+| `frankless_case.scad` | Printable parts (`part = assembly / exploded / bottom / top / plungers / all`) and the options below |
 | `frankless_board.stl` | Populated board model, from the KiCad file and the STEP models, for fit checks |
 
 ```
@@ -56,32 +55,58 @@ their length, change that value, not the bottom end: at rest the bar sits
 The two LED holes (2 mm) end in short tubes 1 mm above LD1 and LD2. A bit of
 1.75 mm clear filament makes a good light pipe.
 
-## Variant: coin cell and header windows
+## Options
 
-`frankless_case_cell.scad` builds the same case with two changes:
+`frankless_case.scad` has three options. Set them in the Customizer or with
+`-D` on the command line. The committed STLs use the defaults.
 
-- **Deeper tray.** The floor is 7.5 mm lower (`ff_under = 10.3`), which
-  leaves room for a 24 × 32 × 6.1 mm CR2032 holder on double-sided tape under
-  the board. Four L-shaped ribs on the floor locate the holder at y 10–42.
-  That keeps it clear of the standoffs and close to J10 (BAT 3V). Solder the
-  holder's leads straight into J10's holes from underneath. With about 0.8 mm
-  of tape, the holder ends up 1.1 mm below the lowest part on the board.
-- **Header windows.** The lid has windows over J1 (GPIO, 2×5) and J8 (UART,
-  2×3), sized for Dupont housings with 0.4 mm clearance per side.
+### Header openings: `headers_top`, `headers_bottom`
 
-Exported parts: `frankless_case_cell_bottom.stl` and
-`frankless_case_cell_top.stl`. The plungers are the same as the stock case
-(`frankless_case_plungers.stl`). The tray is 7.5 mm deeper, so use
-4 × M2.5 × 16 bolts (they reach 1 mm past the nut).
+The pin headers (J1 GPIO 2×5, J8 UART 2×3) are left off the board, and the
+case has an opening over each pin field in the lid and in the tray floor. Each
+opening is sized for a Dupont housing, with 0.4 mm clearance per side.
 
-For a "hat" board on top of the lid, the header pins must reach the outside of
-the lid, which is 16.2 mm above the header's plastic base. Allowing about 6 mm
-to plug into a socket on the hat, that's roughly 22 mm above the plastic.
+- `"knockout"` (default): a panel in the wall, held by a 0.4 mm skin at the
+  outside face (`ff_ko_web`). A 0.6 mm groove from the inside
+  (`ff_ko_groove`) marks the outline. The outside looks closed. If you need
+  the opening, score along the groove from the inside with a craft knife and
+  push the panel out. Clean up the edge with a file.
+- `"open"`: the opening is printed through.
+- `"closed"`: no opening.
 
-The options are plain variables (`ff_cell`, `ff_cell_size`, `ff_cell_center`,
-`ff_header_windows`, `ff_under`). To change them, set them in a file that does
-`include <frankless.scad>`, the way `frankless_case_cell.scad` does. A file
-that uses `use <frankless.scad>` can't override them.
+Use the top openings to take the pins out through the lid, for jumper wires
+or a "hat" board. A hat needs extra-long pins: the outside of the lid is
+16.2 mm above the header's plastic base. Allowing about 6 mm to plug into a
+socket on the hat, that's roughly 22 mm above the plastic. Use the bottom
+openings with a header fitted on the underside of the board.
+
+### Coin cell: `cell`
+
+```
+openscad -D 'part="bottom"' -D cell=true -o bottom.stl frankless_case.scad
+openscad -D 'part="top"'    -D cell=true -o top.stl    frankless_case.scad
+```
+
+`cell = true` makes the tray 7.5 mm deeper (`ff_under` = 10.3, case height
+32.6 mm), which leaves room for a 24 × 32 × 6.1 mm CR2032 holder on
+double-sided tape under the board. Four L-shaped ribs on the floor locate the
+holder at y 10–42. That keeps it clear of the standoffs and close to J10
+(BAT 3V). Solder the holder's leads straight into J10's holes from
+underneath. With about 0.8 mm of tape, the holder ends up 1.1 mm below the
+lowest part on the board.
+
+- Use 4 × M2.5 × 16 bolts instead of × 10 (they reach 1 mm past the nut).
+- The holder covers the floor openings, so `headers_bottom` is ignored and
+  the floor is closed.
+- The lid and plungers are the same as the stock case. Only the tray changes.
+- `ff_cell_center` moves the holder, if its leads need to face another way.
+
+### In your own file
+
+The parts file `include`s the library and then sets its variables (`ff_cell`,
+`ff_under`, `ff_header_top`, `ff_header_bottom`, …). Do the same in your own
+file to change other settings. A file that uses `use <frankless.scad>` can't
+override them.
 
 ## Printing in resin
 

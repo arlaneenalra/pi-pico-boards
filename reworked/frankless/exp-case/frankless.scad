@@ -106,11 +106,18 @@ ff_plunger_clr= 0.2;    // per side, plunger in its bore
 ff_plunger_proud = 2.8; // plunger top above the lid (0.8 was too short)
 ff_fit        = 0.15;   // general sliding fit
 
-// Options, all off for the stock case. Set them in a file that
-// include<>s this one (see frankless_case_cell.scad).
-ff_header_windows = false;  // lid windows over J1/J8, sized for Dupont housings
+// Options. Set them in a file that include<>s this one (frankless_case.scad
+// exposes them as `headers_top`, `headers_bottom` and `cell`).
+// Openings over the J1 GPIO and J8 UART pin fields, in the lid top and in the
+// tray floor: "knockout" (thin panel you cut out if you need it), "open" or
+// "closed". Sized for Dupont housings.
+ff_header_top     = "knockout";
+ff_header_bottom  = "knockout";  // ignored (closed) when ff_cell is on
 ff_header_clr     = 0.4;    // per side, around the housing outline
+ff_ko_web         = 0.4;    // knockout: skin left at the outside face
+ff_ko_groove      = 0.6;    // knockout: width of the groove around the panel
 ff_cell           = false;  // locating ribs on the floor for a coin cell holder
+                            // (needs ff_under = 10.3 to fit under the board)
 ff_cell_size      = [24, 32, 6.1];   // holder footprint (x, y) and height
 ff_cell_center    = [16, 26];        // clear of the standoffs, near J10
 ff_cell_clr       = 0.4;    // per side, holder inside the ribs
@@ -262,18 +269,35 @@ module frankless_lid_holes(ceil_z = ff_ceil_z(), top_t = ff_top_t) {
             cylinder(d = ff_plunger_d + 2 * ff_plunger_clr, h = ceil_z + top_t);
     for (l = FF_LEDS)
         translate([l[0], l[1], 0]) cylinder(d = ff_led_hole_d, h = ceil_z + top_t + 1);
-    if (ff_header_windows) frankless_header_windows(ceil_z, top_t);
+    frankless_header_cuts(ff_header_top, ceil_z, ceil_z + top_t);
 }
 
-// Windows through the lid top over the header pin fields, big enough for
-// Dupont housings (pin field + half a pitch + ff_header_clr each side).
-module frankless_header_windows(ceil_z = ff_ceil_z(), top_t = ff_top_t) {
+// Outlines of Dupont housings on the header pin fields (pin field + half a
+// pitch + ff_header_clr each side).
+module ff_header_outlines() {
     m = 2.54 / 2 + ff_header_clr;
     for (h = FF_HEADERS)
-        translate([0, 0, ceil_z - 1]) linear_extrude(top_t + 2)
-            offset(r = 0.5) offset(delta = -0.5)
-                translate([h[1][0] - m, h[1][1] - m])
-                    square([h[2][0] - h[1][0] + 2 * m, h[2][1] - h[1][1] + 2 * m]);
+        offset(r = 0.5) offset(delta = -0.5)
+            translate([h[1][0] - m, h[1][1] - m])
+                square([h[2][0] - h[1][0] + 2 * m, h[2][1] - h[1][1] + 2 * m]);
+}
+
+module ff_zslab(a, b) translate([0, 0, min(a, b)]) linear_extrude(abs(b - a)) children();
+
+// Header openings through a panel whose inside face is at z_in and outside
+// face at z_out (works for the lid top and the tray floor). A knockout is a
+// groove cut from the inside, leaving ff_ko_web at the outside face, so the
+// outside stays clean until you cut the panel out.
+module frankless_header_cuts(mode, z_in, z_out) {
+    s = sign(z_out - z_in);
+    if (mode == "open")
+        ff_zslab(z_in - s, z_out + s) ff_header_outlines();
+    else if (mode == "knockout")
+        ff_zslab(z_in - s, z_out - s * ff_ko_web) difference() {
+            ff_header_outlines();
+            offset(delta = -ff_ko_groove) ff_header_outlines();
+        }
+    else assert(mode == "closed", str("unknown header mode: ", mode));
 }
 
 // One plunger, modelled in place over button `i` (0 = S3, 1 = S4).
@@ -323,6 +347,8 @@ module frankless_case_bottom() {
         ff_cavity(ff_floor_z(), ff_lip_h + 1);
         frankless_wall_cuts(lid = false);
         frankless_standoff_holes();
+        // the holder covers these, so no openings under it
+        if (!ff_cell) frankless_header_cuts(ff_header_bottom, ff_floor_z(), ff_floor_z() - ff_floor_t);
     }
     difference() {
         frankless_standoffs();
