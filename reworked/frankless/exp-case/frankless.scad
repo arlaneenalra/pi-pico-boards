@@ -75,7 +75,7 @@ ff_over       = 0.4;    // space above the tallest part
 ff_corner_r   = FF_R + 0.3 + 2.0;   // outer vertical corner radius
 ff_edge_r     = 2.0;    // outer top/bottom edge rounding
 ff_lip_h      = 1.5;    // alignment lip height (tray into lid)
-ff_lip_fit    = 0.15;   // per-side lip clearance
+ff_lip_fit    = 0.25;   // per-side lip clearance (0.15 bound on the first resin print)
 ff_screw_d    = 2.9;    // M2.5 clearance
 ff_head_d     = 5.0;    // M2.5 socket head counterbore
 ff_head_depth = 3.0;    // counterbore depth from the outside
@@ -98,6 +98,7 @@ ff_pilot_l    = 9.0;
 ff_led_hole_d = 2.0;    // fits 1.75 mm clear filament as a light pipe
 ff_plunger_d  = 3.0;
 ff_plunger_clr= 0.2;    // per side, plunger in its bore
+ff_plunger_proud = 2.8; // plunger top above the lid (0.8 was too short)
 ff_fit        = 0.15;   // general sliding fit
 
 $fn = 64;
@@ -250,7 +251,7 @@ module frankless_lid_holes(ceil_z = ff_ceil_z(), top_t = ff_top_t) {
 
 // One plunger, modelled in place over button `i` (0 = S3, 1 = S4).
 // Prints standing on its bar. Sticks out `proud` mm above the lid.
-module frankless_plunger(i = 0, ceil_z = ff_ceil_z(), top_t = ff_top_t, proud = 0.8) {
+module frankless_plunger(i = 0, ceil_z = ff_ceil_z(), top_t = ff_top_t, proud = ff_plunger_proud) {
     b = FF_BUTTONS[i];
     z0 = FF_BUTTON_Z + ff_plunger_gap;
     top = ceil_z + top_t + proud;
@@ -302,6 +303,16 @@ module frankless_case_bottom() {
     }
 }
 
+// Rebate for the tray lip. Cut after the lid features are added, so the
+// corner posts (which reach into the wall) clear the lip too, with ff_lip_fit
+// on both its faces.
+module ff_lip_rebate() {
+    translate([0, 0, -1]) linear_extrude(ff_lip_h + 0.2 + 1) difference() {
+        ff_outline2d(ff_gap + ff_wall / 2 + ff_lip_fit);
+        ff_outline2d(ff_gap - ff_lip_fit);
+    }
+}
+
 module frankless_case_top() {
     difference() {
         union() {
@@ -311,10 +322,10 @@ module frankless_case_top() {
                     translate([-50, -50, 0]) cube([200, 200, 100]);
                 }
                 ff_cavity(-1, ff_ceil_z());
-                translate([0, 0, -1]) linear_extrude(ff_lip_h + 0.2 + 1) ff_lip_ring(+1);
             }
             frankless_lid_features();
         }
+        ff_lip_rebate();
         frankless_wall_cuts(lid = true);
         frankless_lid_holes();
     }

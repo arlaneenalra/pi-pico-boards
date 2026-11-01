@@ -48,13 +48,18 @@ Each nut slot is 5.2 mm across the flats (5.0 mm nut + 0.1 mm per side) and
 while you're assembling, a dab of Blu Tack holds them until the bolts go in. On an FDM printer you can switch to
 `ff_screw_mode = "selftap"` (2.2 mm pilot) or `"insert"` (M2.5 heat-set).
 
+The plungers stand 2.8 mm proud of the lid (`ff_plunger_proud`). To change
+their length, change that value, not the bottom end: at rest the bar sits
+0.5 mm below the guide, so a longer bottom end would hold the buttons down.
+
 The two LED holes (2 mm) end in short tubes 1 mm above LD1 and LD2. A bit of
 1.75 mm clear filament makes a good light pipe.
 
 ## Printing in resin
 
 - Clearances are set for a printer that holds about ±0.1 mm. If your parts
-  come out tight, raise `ff_nut_clr`, `ff_lip_fit` (lip into lid),
+  come out tight, raise `ff_nut_clr`, `ff_lip_fit` (lip into lid; 0.25 mm per
+  side, after 0.15 bound on the first print),
   `ff_plunger_clr` (plungers in their bores) and `ff_cut_clr` (connector
   openings).
 - Put supports on the inside faces, so the rounded outside stays clean.
@@ -62,7 +67,7 @@ The two LED holes (2 mm) end in short tubes 1 mm above LD1 and LD2. A bit of
 - If your slicer hollows the parts, leave the posts, standoffs and button
   guide solid. They're small enough that the slicer usually leaves them solid
   anyway.
-- The plungers are 3 mm thick and 17 mm long. Print them standing up on their
+- The plungers are 3 mm thick and 19 mm long. Print them standing up on their
   bars, or angled, and add a few supports.
 
 ## Openings
