@@ -11,6 +11,7 @@ suits resin printing: no self-tapping screws and no heat-set inserts. Everything
 |---|---|
 | `frankless.scad` | Library: board data, cutouts, standoffs, lid features, complete case |
 | `frankless_case.scad` | Printable parts (`part = assembly / exploded / bottom / top / plungers / all`) |
+| `frankless_case_cell.scad` | Variant: deeper tray for a CR2032 holder, lid windows over the GPIO and UART headers |
 | `frankless_board.stl` | Populated board model, from the KiCad file and the STEP models, for fit checks |
 
 ```
@@ -54,6 +55,33 @@ their length, change that value, not the bottom end: at rest the bar sits
 
 The two LED holes (2 mm) end in short tubes 1 mm above LD1 and LD2. A bit of
 1.75 mm clear filament makes a good light pipe.
+
+## Variant: coin cell and header windows
+
+`frankless_case_cell.scad` builds the same case with two changes:
+
+- **Deeper tray.** The floor is 7.5 mm lower (`ff_under = 10.3`), which
+  leaves room for a 24 × 32 × 6.1 mm CR2032 holder on double-sided tape under
+  the board. Four L-shaped ribs on the floor locate the holder at y 10–42.
+  That keeps it clear of the standoffs and close to J10 (BAT 3V). Solder the
+  holder's leads straight into J10's holes from underneath. With about 0.8 mm
+  of tape, the holder ends up 1.1 mm below the lowest part on the board.
+- **Header windows.** The lid has windows over J1 (GPIO, 2×5) and J8 (UART,
+  2×3), sized for Dupont housings with 0.4 mm clearance per side.
+
+Exported parts: `frankless_case_cell_bottom.stl` and
+`frankless_case_cell_top.stl`. The plungers are the same as the stock case
+(`frankless_case_plungers.stl`). The tray is 7.5 mm deeper, so use
+4 × M2.5 × 16 bolts (they reach 1 mm past the nut).
+
+For a "hat" board on top of the lid, the header pins must reach the outside of
+the lid, which is 16.2 mm above the header's plastic base. Allowing about 6 mm
+to plug into a socket on the hat, that's roughly 22 mm above the plastic.
+
+The options are plain variables (`ff_cell`, `ff_cell_size`, `ff_cell_center`,
+`ff_header_windows`, `ff_under`). To change them, set them in a file that does
+`include <frankless.scad>`, the way `frankless_case_cell.scad` does. A file
+that uses `use <frankless.scad>` can't override them.
 
 ## Printing in resin
 

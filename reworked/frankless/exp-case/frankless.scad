@@ -45,6 +45,11 @@ FF_BUTTON_Z = 2.01;                                  // switch top
 FF_LEDS     = [[3.14, 61.19], [5.22, 14.65]];        // LD1, LD2 (0603)
 FF_LED_Z    = 1.10;
 
+// Unpopulated 2.54 mm headers: [name, first pin centre, last pin centre].
+// J10 (BAT 3V, 1x2) is at [26.75, 8.6]..[29.29, 8.6].
+FF_HEADERS  = [["J1 GPIO", [27.05, 26.42], [29.59, 36.58]],   // 2x5
+               ["J8 UART", [24.53, 18.89], [29.61, 21.43]]];  // 2x3
+
 // Edge openings: [name, side, center along edge, center z, width, height,
 //                 corner r, recess]
 //   side: "N" = +Y (USB-A) end, "S" = -Y (HDMI) end, "W" = X=0, "E" = X=32
@@ -100,6 +105,16 @@ ff_plunger_d  = 3.0;
 ff_plunger_clr= 0.2;    // per side, plunger in its bore
 ff_plunger_proud = 2.8; // plunger top above the lid (0.8 was too short)
 ff_fit        = 0.15;   // general sliding fit
+
+// Options, all off for the stock case. Set them in a file that
+// include<>s this one (see frankless_case_cell.scad).
+ff_header_windows = false;  // lid windows over J1/J8, sized for Dupont housings
+ff_header_clr     = 0.4;    // per side, around the housing outline
+ff_cell           = false;  // locating ribs on the floor for a coin cell holder
+ff_cell_size      = [24, 32, 6.1];   // holder footprint (x, y) and height
+ff_cell_center    = [16, 26];        // clear of the standoffs, near J10
+ff_cell_clr       = 0.4;    // per side, holder inside the ribs
+ff_cell_rib       = [1.2, 1.0, 5.0]; // rib thickness, height, leg length
 
 $fn = 64;
 
@@ -247,6 +262,18 @@ module frankless_lid_holes(ceil_z = ff_ceil_z(), top_t = ff_top_t) {
             cylinder(d = ff_plunger_d + 2 * ff_plunger_clr, h = ceil_z + top_t);
     for (l = FF_LEDS)
         translate([l[0], l[1], 0]) cylinder(d = ff_led_hole_d, h = ceil_z + top_t + 1);
+    if (ff_header_windows) frankless_header_windows(ceil_z, top_t);
+}
+
+// Windows through the lid top over the header pin fields, big enough for
+// Dupont housings (pin field + half a pitch + ff_header_clr each side).
+module frankless_header_windows(ceil_z = ff_ceil_z(), top_t = ff_top_t) {
+    m = 2.54 / 2 + ff_header_clr;
+    for (h = FF_HEADERS)
+        translate([0, 0, ceil_z - 1]) linear_extrude(top_t + 2)
+            offset(r = 0.5) offset(delta = -0.5)
+                translate([h[1][0] - m, h[1][1] - m])
+                    square([h[2][0] - h[1][0] + 2 * m, h[2][1] - h[1][1] + 2 * m]);
 }
 
 // One plunger, modelled in place over button `i` (0 = S3, 1 = S4).
@@ -301,6 +328,20 @@ module frankless_case_bottom() {
         frankless_standoffs();
         frankless_standoff_holes();
     }
+    if (ff_cell) frankless_cell_locator();
+}
+
+// Four L-shaped corner ribs that locate a coin cell holder on the floor (it is
+// held down with double-sided tape). Open sides leave room for the leads.
+module frankless_cell_locator(floor_z = ff_floor_z()) {
+    w = ff_cell_size[0] / 2 + ff_cell_clr; l = ff_cell_size[1] / 2 + ff_cell_clr;
+    t = ff_cell_rib[0]; h = ff_cell_rib[1]; leg = ff_cell_rib[2];
+    translate([ff_cell_center[0], ff_cell_center[1], floor_z - 0.01])
+        for (sx = [-1, 1], sy = [-1, 1]) scale([sx, sy, 1])
+            translate([w, l, 0]) {
+                translate([0, -leg, 0]) cube([t, leg + t, h + 0.01]);
+                translate([-leg, 0, 0]) cube([leg + t, t, h + 0.01]);
+            }
 }
 
 // Rebate for the tray lip. Cut after the lid features are added, so the
