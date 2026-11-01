@@ -3,7 +3,7 @@
 //   openscad -D 'part="bottom"' -o bottom.stl frankless_case.scad
 //   openscad -D 'part="bottom"' -D cell=true -o bottom.stl frankless_case.scad
 
-part = "assembly"; // [assembly, exploded, bottom, top, plungers, all]
+part = "assembly"; // [assembly, exploded, bottom, top, plungers, all, board]
 
 // Openings over the J1 GPIO and J8 UART headers, in the lid and in the tray floor.
 headers_top    = "knockout"; // [knockout, open, closed]
@@ -23,6 +23,7 @@ ff_under         = cell ? 10.3 : 2.8;   // floor at Z=-12 or Z=-4.5
 if (part == "assembly") frankless_case_assembly();
 else if (part == "exploded") frankless_case_assembly(explode = 30);
 else if (part == "bottom") frankless_case_bottom();
+else if (part == "board") frankless_board();
 // Lid is flipped for printing: its top goes on the bed.
 else if (part == "top") translate([0, FF_L, ff_top_z()]) rotate([180, 0, 0]) frankless_case_top();
 else if (part == "plungers")
