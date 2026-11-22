@@ -9355,7 +9355,7 @@
 	)
 	(gr_line
 		(start 207.14 79.51)
-		(end 222.36 79.51)
+		(end 223.86 79.51)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9375,9 +9375,9 @@
 		(uuid "452a915e-c3c3-444a-8778-f152af0d08a3")
 	)
 	(gr_arc
-		(start 222.36 79.51)
-		(mid 223.774214 80.095786)
-		(end 224.36 81.51)
+		(start 223.86 79.51)
+		(mid 224.213553 79.656447)
+		(end 224.36 80.01)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9386,7 +9386,7 @@
 		(uuid "52f3b210-4634-4b64-a4bc-4e03adcb0646")
 	)
 	(gr_line
-		(start 224.36 81.51)
+		(start 224.36 80.01)
 		(end 224.36 85.52)
 		(stroke
 			(width 0.05)
