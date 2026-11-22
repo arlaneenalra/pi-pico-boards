@@ -9355,7 +9355,7 @@
 	)
 	(gr_line
 		(start 207.14 79.51)
-		(end 222.54 79.51)
+		(end 222.36 79.51)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9375,9 +9375,9 @@
 		(uuid "452a915e-c3c3-444a-8778-f152af0d08a3")
 	)
 	(gr_arc
-		(start 222.54 79.51)
-		(mid 223.954214 80.095786)
-		(end 224.54 81.51)
+		(start 222.36 79.51)
+		(mid 223.774214 80.095786)
+		(end 224.36 81.51)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9386,8 +9386,8 @@
 		(uuid "52f3b210-4634-4b64-a4bc-4e03adcb0646")
 	)
 	(gr_line
-		(start 224.54 81.51)
-		(end 224.54 85.52)
+		(start 224.36 81.51)
+		(end 224.36 85.52)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9396,9 +9396,9 @@
 		(uuid "e353aee7-a9d6-44cc-b2ca-66f07f2c2304")
 	)
 	(gr_arc
-		(start 226.54 87.52)
-		(mid 225.125786 86.934214)
-		(end 224.54 85.52)
+		(start 226.36 87.52)
+		(mid 224.945786 86.934214)
+		(end 224.36 85.52)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9407,8 +9407,8 @@
 		(uuid "3f36d100-913d-4c30-b6d9-23e784c686f9")
 	)
 	(gr_line
-		(start 226.54 87.52)
-		(end 228.53 87.52)
+		(start 226.36 87.52)
+		(end 228.95 87.52)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9417,9 +9417,9 @@
 		(uuid "da33604d-55ad-44d4-b5d5-fc5f5592eb98")
 	)
 	(gr_arc
-		(start 230.53 81.51)
-		(mid 231.115786 80.095786)
-		(end 232.53 79.51)
+		(start 230.95 81.51)
+		(mid 231.535786 80.095786)
+		(end 232.95 79.51)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9428,9 +9428,9 @@
 		(uuid "94ad4229-5100-4a21-939a-cff7a6074edf")
 	)
 	(gr_arc
-		(start 230.53 85.52)
-		(mid 229.944214 86.934214)
-		(end 228.53 87.52)
+		(start 230.95 85.52)
+		(mid 230.364214 86.934214)
+		(end 228.95 87.52)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9439,8 +9439,8 @@
 		(uuid "119eb3f3-9a8d-46e8-8aaf-0eb64157b73a")
 	)
 	(gr_line
-		(start 230.53 85.52)
-		(end 230.53 81.51)
+		(start 230.95 85.52)
+		(end 230.95 81.51)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -9449,7 +9449,7 @@
 		(uuid "c5120d0f-48c2-49fe-8341-6f9a8674de53")
 	)
 	(gr_line
-		(start 232.53 79.51)
+		(start 232.95 79.51)
 		(end 235.18 79.51)
 		(stroke
 			(width 0.05)
