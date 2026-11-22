@@ -2483,16 +2483,10 @@
 		(uuid "6178d178-5448-4b5f-824a-f63ee00ce44f")
 	)
 	(junction
-		(at 142.24 92.71)
+		(at 116.84 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6be25872-72d4-412d-a1a9-d3c6878569c5")
-	)
-	(junction
-		(at 119.38 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "733cfa2f-12bb-4c9d-b3ba-0355810f66f0")
+		(uuid "6e3a836f-f078-4df1-a49d-1371fca3217f")
 	)
 	(junction
 		(at 73.66 151.13)
@@ -2501,16 +2495,22 @@
 		(uuid "7d4d2fa7-3b1a-4e01-8162-453841a8157e")
 	)
 	(junction
+		(at 204.47 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82236cc1-2720-4090-a600-9eb03a2723f3")
+	)
+	(junction
 		(at 58.42 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93cb08e8-6be9-47fe-99ed-887dc379b9ab")
 	)
 	(junction
-		(at 176.53 115.57)
+		(at 135.89 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "98d61abb-f3b7-4cf9-800d-df8fdf87366a")
+		(uuid "a7a0849d-dcda-4518-8bbb-ccde775f3bf4")
 	)
 	(junction
 		(at 176.53 92.71)
@@ -2518,9 +2518,21 @@
 		(color 0 0 0 0)
 		(uuid "ae0603b2-296b-4cb1-ad0a-c80896309b2a")
 	)
+	(junction
+		(at 127 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d43e1326-befc-4ffd-af2a-0698a78bab8a")
+	)
+	(junction
+		(at 132.08 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d735ddbd-caa2-4f2d-8c10-93f6e91cd3b0")
+	)
 	(wire
 		(pts
-			(xy 173.99 115.57) (xy 176.53 115.57)
+			(xy 173.99 115.57) (xy 191.77 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2550,13 +2562,23 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 113.03) (xy 204.47 113.03)
+			(xy 199.39 115.57) (xy 204.47 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0d2877c1-dd76-4ace-896f-48c383eeabb9")
+	)
+	(wire
+		(pts
+			(xy 135.89 151.13) (xy 139.7 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1147b07a-8b9b-4f68-8b34-350443b94a1d")
 	)
 	(wire
 		(pts
@@ -2590,6 +2612,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 106.68) (xy 116.84 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23e02d1c-b084-4da3-986a-60ef4319ea41")
+	)
+	(wire
+		(pts
 			(xy 116.84 151.13) (xy 116.84 152.4)
 		)
 		(stroke
@@ -2597,16 +2629,6 @@
 			(type default)
 		)
 		(uuid "2f9f7724-b405-4521-b928-c22d98348cac")
-	)
-	(wire
-		(pts
-			(xy 176.53 115.57) (xy 176.53 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32ab49eb-067a-4518-82f9-bab6c8d4bc25")
 	)
 	(wire
 		(pts
@@ -2640,7 +2662,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 151.13) (xy 124.46 151.13)
+			(xy 116.84 151.13) (xy 127 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2657,6 +2679,46 @@
 			(type default)
 		)
 		(uuid "47ab814e-95c5-4bcd-a072-e337d36244eb")
+	)
+	(wire
+		(pts
+			(xy 116.84 78.74) (xy 116.84 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bd98564-ff63-4926-9b40-419f61d70bd8")
+	)
+	(wire
+		(pts
+			(xy 204.47 97.79) (xy 204.47 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55515fef-77e8-4010-be5d-ade153f6ebfa")
+	)
+	(wire
+		(pts
+			(xy 135.89 161.29) (xy 135.89 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57985101-0464-4454-8d65-5471e3ba1262")
+	)
+	(wire
+		(pts
+			(xy 135.89 152.4) (xy 135.89 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58d8cc0b-4890-48dd-8820-59e914594b6c")
 	)
 	(wire
 		(pts
@@ -2680,6 +2742,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 92.71) (xy 132.08 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bbe88ae-903f-44f4-8984-52bdb7d7e328")
+	)
+	(wire
+		(pts
 			(xy 101.6 151.13) (xy 106.68 151.13)
 		)
 		(stroke
@@ -2690,6 +2762,26 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 128.27) (xy 92.71 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dfdf2e6-23ba-49ae-8150-33d8b69d3028")
+	)
+	(wire
+		(pts
+			(xy 173.99 97.79) (xy 193.04 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70d1cc86-6df7-4371-acb2-2df26522d51c")
+	)
+	(wire
+		(pts
 			(xy 176.53 92.71) (xy 180.34 92.71)
 		)
 		(stroke
@@ -2697,6 +2789,16 @@
 			(type default)
 		)
 		(uuid "7129f1e9-50be-40ae-a7f7-a55e16ca1033")
+	)
+	(wire
+		(pts
+			(xy 173.99 113.03) (xy 180.34 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "717eda91-7228-4dd7-b413-3656834ce40e")
 	)
 	(wire
 		(pts
@@ -2720,33 +2822,23 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 80.01) (xy 119.38 88.9)
+			(xy 127 152.4) (xy 127 151.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7faff8da-8d6e-4c61-8073-7ce9fb57d93b")
+		(uuid "7eb79aee-826f-42a3-85f6-17559c48d848")
 	)
 	(wire
 		(pts
-			(xy 204.47 113.03) (xy 204.47 125.73)
+			(xy 204.47 115.57) (xy 204.47 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7fcc7070-3296-475a-a54a-9b7ed9b8515b")
-	)
-	(wire
-		(pts
-			(xy 176.53 113.03) (xy 193.04 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81c5b4c5-84a6-4cb6-9ea9-725adda0e1f7")
 	)
 	(wire
 		(pts
@@ -2770,7 +2862,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 97.79) (xy 143.51 97.79)
+			(xy 142.24 97.79) (xy 143.51 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2800,16 +2892,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 97.79) (xy 119.38 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a57c033-e984-413a-98ac-8eba1c83fd27")
-	)
-	(wire
-		(pts
 			(xy 173.99 92.71) (xy 176.53 92.71)
 		)
 		(stroke
@@ -2830,33 +2912,13 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 88.9) (xy 142.24 88.9)
+			(xy 132.08 78.74) (xy 132.08 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a499b9da-6e25-4ff4-bd26-2cca207ae6d4")
-	)
-	(wire
-		(pts
-			(xy 119.38 88.9) (xy 121.92 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5b8bd21-1d88-4421-8ad2-28987b707326")
-	)
-	(wire
-		(pts
-			(xy 92.71 128.27) (xy 83.82 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa14178e-a047-435f-9cc5-d9a57afca417")
+		(uuid "af075f49-61ca-4b1e-8069-6cd6e86ca32b")
 	)
 	(wire
 		(pts
@@ -2867,6 +2929,16 @@
 			(type default)
 		)
 		(uuid "b349f83e-433d-4068-a303-063e90ce16f5")
+	)
+	(wire
+		(pts
+			(xy 132.08 92.71) (xy 143.51 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b41211a0-fcce-46f2-a00b-9181c90c98a7")
 	)
 	(wire
 		(pts
@@ -2900,13 +2972,13 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 102.87) (xy 180.34 102.87)
+			(xy 200.66 97.79) (xy 204.47 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c59aa088-16d2-447e-b14d-448d0aa6b0ab")
+		(uuid "c274b6f5-956e-4afc-b507-3f4b7462300c")
 	)
 	(wire
 		(pts
@@ -2930,13 +3002,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 115.57) (xy 180.34 115.57)
+			(xy 127 151.13) (xy 135.89 151.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cc95f81b-a49e-49fd-8792-c36e6e889153")
+		(uuid "cc877fd2-d525-4f00-b306-5d594bf2edb5")
 	)
 	(wire
 		(pts
@@ -2950,7 +3022,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 97.79) (xy 119.38 97.79)
+			(xy 134.62 97.79) (xy 130.81 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2960,13 +3032,13 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 88.9) (xy 142.24 92.71)
+			(xy 116.84 92.71) (xy 116.84 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ddd06a88-853f-428b-9dc0-1ddac22c6e26")
+		(uuid "dc1701ad-98c0-4488-8f0d-1964b4abba54")
 	)
 	(wire
 		(pts
@@ -3000,26 +3072,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 92.71) (xy 142.24 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6b77724-affe-41c1-af72-99dd483fdeb2")
-	)
-	(wire
-		(pts
-			(xy 142.24 92.71) (xy 143.51 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea03fbcb-7f73-4edc-806b-5577b6a83447")
-	)
-	(wire
-		(pts
 			(xy 92.71 96.52) (xy 83.82 96.52)
 		)
 		(stroke
@@ -3037,6 +3089,26 @@
 			(type default)
 		)
 		(uuid "f0883391-fa6c-4215-b5fb-4082fb0c7ad2")
+	)
+	(wire
+		(pts
+			(xy 116.84 91.44) (xy 116.84 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb7b05d2-b15f-4420-926c-12540ff759b0")
+	)
+	(wire
+		(pts
+			(xy 127 161.29) (xy 127 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fda0b622-d110-45de-9e7e-a94820125287")
 	)
 	(label "ESP_BOOT"
 		(at 92.71 125.73 0)
@@ -3079,12 +3151,12 @@
 		(uuid "31d5a208-371f-4472-a14d-794b17ef5c55")
 	)
 	(label "ESP_RST"
-		(at 137.16 92.71 180)
+		(at 132.08 78.74 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "3b27190c-cb65-45a1-b759-6155e55462cb")
 	)
@@ -3118,7 +3190,7 @@
 		)
 		(uuid "79c2a2eb-10f2-407b-92cc-a9a67e1baab6")
 	)
-	(label "UART_RTS"
+	(label "UART_CTS"
 		(at 180.34 115.57 0)
 		(effects
 			(font
@@ -3138,7 +3210,7 @@
 		)
 		(uuid "8f441b8d-96f6-48b7-a3aa-6d8adfc0b1da")
 	)
-	(label "UART_CTS"
+	(label "UART_RTS"
 		(at 180.34 110.49 0)
 		(effects
 			(font
@@ -3159,7 +3231,7 @@
 		(uuid "e643c3eb-6670-4786-ac35-24e2b54fe729")
 	)
 	(label "UART_DCD"
-		(at 180.34 102.87 0)
+		(at 180.34 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3420,6 +3492,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 196.85 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05dba45a-81a1-43b2-85a9-ba492628ea93")
+		(property "Reference" "R6"
+			(at 196.85 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 196.85 93.98 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 196.85 99.568 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/26487-0402WGF1002TCE/C25744"
+			(at 196.85 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 196.85 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 196.85 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf48c12c-0666-42b7-9be1-953079a6e89f")
+		)
+		(pin "2"
+			(uuid "0c810dfb-7912-4a0d-b73c-8a1d70726ea1")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 158.75 125.73 0)
 		(unit 1)
@@ -3570,6 +3733,84 @@
 			(project "frankless-wifi"
 				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12e28ff9-311a-4f33-a20d-ff30bb53fa84")
+		(property "Reference" "#PWR04"
+			(at 127 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59502286-7898-4ece-be5d-f0da9011d062")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4590,8 +4831,8 @@
 		)
 	)
 	(symbol
-		(lib_id "MicroFRANK:+3V3")
-		(at 124.46 151.13 270)
+		(lib_id "MicroFRANK:C")
+		(at 135.89 156.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4599,21 +4840,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4a298f99-61bf-4da8-a721-bab488fe2bd7")
-		(property "Reference" "#PWR042"
-			(at 120.65 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 128.27 151.1299 90)
+		(uuid "47196a49-dd7a-4fee-abf5-e60fde1a4195")
+		(property "Reference" "C10"
+			(at 138.811 155.0416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4623,8 +4852,19 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 124.46 151.13 0)
+		(property "Value" "22uf"
+			(at 138.811 157.353 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 136.8552 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4635,7 +4875,375 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 151.13 0)
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress" "https://jlcpcb.com/partdetail/60514-CL10A226MQ8NRNC/C59461"
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 135.89 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C59461"
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C59461"
+			(at 135.89 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "29327aa5-3085-40f3-8ab0-3201442f8294")
+		)
+		(pin "2"
+			(uuid "9c3eed63-c977-42dc-ae18-c82d6240398a")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 135.89 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48113708-939f-409f-8adb-d3d5e3a891e2")
+		(property "Reference" "#PWR05"
+			(at 135.89 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2115a37-284e-471d-a6ca-ae729c492552")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MicroFRANK:+3V3")
+		(at 139.7 151.13 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a298f99-61bf-4da8-a721-bab488fe2bd7")
+		(property "Reference" "#PWR042"
+			(at 135.89 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 143.51 151.1299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4646,7 +5254,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 124.46 151.13 0)
+			(at 139.7 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5350,6 +5958,177 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 132.08 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "714fa71a-5ba5-44de-a06e-53b26a77abd9")
+		(property "Reference" "R5"
+			(at 134.62 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100"
+			(at 134.62 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 130.302 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 132.08 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25076"
+			(at 132.08 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c06c7f6a-73ab-4768-ad29-77ae7469eee0")
+		)
+		(pin "1"
+			(uuid "4a6ab5f3-1ba4-4aca-89fc-6cdf5a160d70")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 116.84 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7201b5eb-925b-4885-9054-4023841b6cc2")
+		(property "Reference" "#PWR06"
+			(at 116.84 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8974dd9-168b-4754-9bf4-597c0e8f4a27")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MicroFRANK:VBUS")
 		(at 83.82 110.49 270)
 		(unit 1)
@@ -5860,7 +6639,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 116.84 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -5966,7 +6745,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 125.73 88.9 90)
+		(at 116.84 87.63 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5977,27 +6756,29 @@
 		(fields_autoplaced yes)
 		(uuid "adefea43-2db8-4bd8-b7f7-e3e3df90676e")
 		(property "Reference" "R1"
-			(at 125.73 82.55 90)
+			(at 119.38 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "10k"
-			(at 125.73 85.09 90)
+			(at 119.38 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 125.73 90.678 90)
+			(at 118.618 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6008,7 +6789,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/partdetail/26487-0402WGF1002TCE/C25744"
-			(at 125.73 88.9 0)
+			(at 116.84 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6019,7 +6800,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 125.73 88.9 0)
+			(at 116.84 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6030,7 +6811,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 125.73 88.9 90)
+			(at 116.84 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6050,6 +6831,388 @@
 			(project "frankless-wifi"
 				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MicroFRANK:C")
+		(at 127 156.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c360f09a-169f-4b8f-b834-a93e637c0dbb")
+		(property "Reference" "C9"
+			(at 129.921 155.0416 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uf"
+			(at 129.921 157.353 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 127.9652 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "AliExpress" "https://jlcpcb.com/partdetail/60514-CL10A226MQ8NRNC/C59461"
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 127 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C59461"
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C59461"
+			(at 127 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab0cc6d3-eaad-4836-a86d-0cda0f8e4bf0")
+		)
+		(pin "2"
+			(uuid "44651831-7e88-43fd-9f1f-e1d858613483")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 116.84 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7c7230e-73bb-4476-812f-acf8d33b0ce2")
+		(property "Reference" "C2"
+			(at 120.65 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 120.65 102.8699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 117.8052 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 116.84 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 116.84 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6c1e5c96-fc54-4c23-9d88-9cf3114ecb85")
+		)
+		(pin "2"
+			(uuid "06a63eaf-fc77-4fda-9e11-4892aeb0aaf0")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -6204,7 +7367,7 @@
 	)
 	(symbol
 		(lib_id "MicroFRANK:+3V3")
-		(at 119.38 80.01 0)
+		(at 116.84 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6215,7 +7378,7 @@
 		(fields_autoplaced yes)
 		(uuid "d1ec385b-e01d-41e3-8f1d-467705ace8d8")
 		(property "Reference" "#PWR063"
-			(at 119.38 83.82 0)
+			(at 116.84 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6226,7 +7389,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 119.38 74.93 0)
+			(at 116.84 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6236,7 +7399,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 80.01 0)
+			(at 116.84 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6247,7 +7410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 80.01 0)
+			(at 116.84 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6258,7 +7421,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 119.38 80.01 0)
+			(at 116.84 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6573,6 +7736,85 @@
 	)
 	(symbol
 		(lib_id "MicroFRANK:+3V3")
+		(at 130.81 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc3a757e-6c9c-4f6b-bab8-0137a1833c46")
+		(property "Reference" "#PWR066"
+			(at 134.62 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 127 97.7899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 130.81 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "52242094-33c3-4d34-af1a-c122e295d18a")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MicroFRANK:+3V3")
 		(at 158.75 80.01 0)
 		(unit 1)
 		(body_style 1)
@@ -6651,7 +7893,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 125.73 97.79 90)
+		(at 138.43 97.79 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6659,10 +7901,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eca9f8c0-105f-4a68-94ed-d5fd4826cf53")
 		(property "Reference" "R2"
-			(at 125.73 91.44 90)
+			(at 138.43 100.076 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6672,7 +7913,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 125.73 93.98 90)
+			(at 138.43 101.854 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6682,7 +7923,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 125.73 99.568 90)
+			(at 138.43 99.568 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6693,7 +7934,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/partdetail/26487-0402WGF1002TCE/C25744"
-			(at 125.73 97.79 0)
+			(at 138.43 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6704,7 +7945,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 125.73 97.79 0)
+			(at 138.43 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6715,7 +7956,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 125.73 97.79 90)
+			(at 138.43 97.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7111,7 +8352,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 113.03 90)
+		(at 195.58 115.57 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7122,7 +8363,7 @@
 		(fields_autoplaced yes)
 		(uuid "fdd0fa28-2226-4af5-be23-2d0988e7f19f")
 		(property "Reference" "R4"
-			(at 196.85 106.68 90)
+			(at 195.58 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7132,7 +8373,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 196.85 109.22 90)
+			(at 195.58 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7142,7 +8383,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 196.85 114.808 90)
+			(at 195.58 117.348 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7153,7 +8394,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/partdetail/26487-0402WGF1002TCE/C25744"
-			(at 196.85 113.03 0)
+			(at 195.58 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7164,7 +8405,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 196.85 113.03 0)
+			(at 195.58 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7175,7 +8416,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 196.85 113.03 90)
+			(at 195.58 115.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

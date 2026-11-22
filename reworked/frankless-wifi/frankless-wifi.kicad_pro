@@ -78,10 +78,6 @@
       ],
       "drc_exclusions": [
         [
-          "copper_edge_clearance|223965362|80311400|52f3b210-4634-4b64-a4bc-4e03adcb0646|37aaa2ed-818f-4156-8fd5-feb5f9cb5b79",
-          ""
-        ],
-        [
           "starved_thermal|219680000|102220000|fc8dc51b-cea9-461b-97c3-3659ee57dc26|62a19cbb-714d-406f-9403-d27fdc7e7031|F.Cu",
           ""
         ],
@@ -165,7 +161,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.3,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -848,7 +844,7 @@
         "uuid": "08219cc6-ce50-47e0-96a9-6cd5ff897337"
       }
     ],
-    "used_designators": "#PWR1-4,#PWR31-33,#PWR36-37,#PWR40,#PWR42,#PWR60-65,#PWR92,#PWR96,#PWR101,#PWR103-104,C1-2,C4-8,H1,J1,J8,R1-4,U1,U3",
+    "used_designators": "#PWR1-6,#PWR31-33,#PWR36-37,#PWR40,#PWR42,#PWR60-66,#PWR92,#PWR96,#PWR101,#PWR103-104,C1-2,C4-10,H1,J1,J8,R1-6,U1,U3",
     "variants": []
   },
   "sheets": [
