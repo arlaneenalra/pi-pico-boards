@@ -2495,6 +2495,12 @@
 		(uuid "7d4d2fa7-3b1a-4e01-8162-453841a8157e")
 	)
 	(junction
+		(at 204.47 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82236cc1-2720-4090-a600-9eb03a2723f3")
+	)
+	(junction
 		(at 58.42 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2686,6 +2692,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 97.79) (xy 204.47 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55515fef-77e8-4010-be5d-ade153f6ebfa")
+	)
+	(wire
+		(pts
 			(xy 135.89 161.29) (xy 135.89 160.02)
 		)
 		(stroke
@@ -2753,6 +2769,16 @@
 			(type default)
 		)
 		(uuid "6dfdf2e6-23ba-49ae-8150-33d8b69d3028")
+	)
+	(wire
+		(pts
+			(xy 173.99 97.79) (xy 193.04 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70d1cc86-6df7-4371-acb2-2df26522d51c")
 	)
 	(wire
 		(pts
@@ -2943,6 +2969,16 @@
 			(type default)
 		)
 		(uuid "c0fdf421-6b75-4205-acd5-31f96ab7f9ea")
+	)
+	(wire
+		(pts
+			(xy 200.66 97.79) (xy 204.47 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c274b6f5-956e-4afc-b507-3f4b7462300c")
 	)
 	(wire
 		(pts
@@ -3450,6 +3486,97 @@
 			(project "frankless-wifi"
 				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
 					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 196.85 97.79 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05dba45a-81a1-43b2-85a9-ba492628ea93")
+		(property "Reference" "R6"
+			(at 196.85 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 196.85 93.98 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 196.85 99.568 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/26487-0402WGF1002TCE/C25744"
+			(at 196.85 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 196.85 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 196.85 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf48c12c-0666-42b7-9be1-953079a6e89f")
+		)
+		(pin "2"
+			(uuid "0c810dfb-7912-4a0d-b73c-8a1d70726ea1")
+		)
+		(instances
+			(project "frankless-wifi"
+				(path "/08219cc6-ce50-47e0-96a9-6cd5ff897337"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4966,7 +5093,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 135.89 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -6512,7 +6639,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 116.84 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -6972,7 +7099,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 127 156.21 0)
 			(hide yes)
 			(show_name no)
